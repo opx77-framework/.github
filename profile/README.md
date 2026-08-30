@@ -10,9 +10,9 @@ Join the OPX77 community to discover the framework, share your projects, and con
 
 <!-- TODO: replace with the final URLs before publication. -->
 
-* [OPX77 Website](#)
+* [Open77 Website](#)
 * [OPX77 GitHub](#)
-* [OPX77 Discord](#)
+* [Open77 & Opx77 Discord](#)
 
 ## License
 
