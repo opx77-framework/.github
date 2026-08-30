@@ -1,6 +1,6 @@
 # OPX77
 
-The core framework for **OPX77**, providing the essential systems and APIs required to build resources and gameplay for Cyberpunk 2077 roleplay servers.
+The core framework for **Open77**, providing the essential systems and APIs required to build resources and gameplay for Cyberpunk 2077 roleplay servers.
 
 OPX77 is designed to provide a **simple, flexible, and reliable foundation** for developers. It handles the core functionality that resources can build upon while keeping the framework lightweight, modular, and easy to extend.
 
