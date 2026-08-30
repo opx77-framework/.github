@@ -6,7 +6,7 @@ OPX77 is designed to provide a **simple, flexible, and reliable foundation** for
 
 ## Community & Support
 
-Join the OPX77 community to discover the framework, share your projects, and connect with other developers.
+Join the OPX77 & OPEN77 community to discover the framework, share your projects, and connect with other developers.
 
 <!-- TODO: replace with the final URLs before publication. -->
 
