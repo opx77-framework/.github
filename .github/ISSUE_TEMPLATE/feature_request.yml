@@ -1,0 +1,51 @@
+name: Feature request
+description: Propose a new capability or a change to an existing one.
+title: "<module>: <the capability, in one line>"
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        OPX//77 is a **serious roleplay** framework. Proposals are weighed against a few house rules: the server is authoritative, the client has a strict instruction budget, every player-facing text exists in English and French, and a stranger is never shown a character's name.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - opx_infinity (framework)
+        - opx_lib (client library)
+        - opx77_doc (documentation site)
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What a player, an operator or a creator cannot do today, and why it matters for roleplay or for running a server.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: The proposal
+      description: What should happen. Keys, screens, commands, config keys, exports, whatever makes it concrete.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Other designs, and how other frameworks (ox, Qbox, ESX...) handle it if relevant.
+  - type: textarea
+    id: platform
+    attributes:
+      label: Platform needs
+      description: Open77 natives or services this would rely on, if you know them. A native exists only if the devkit returns it for the build you target.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched the existing issues and the documentation.
+          required: true

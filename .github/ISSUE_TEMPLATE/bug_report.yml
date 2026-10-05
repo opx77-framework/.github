@@ -1,0 +1,104 @@
+name: Bug report
+description: Something in OPX//77 does not work the way the documentation says it should.
+title: "<module>: <what goes wrong, as a player or operator sees it>"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. A bug we can reproduce is a bug we can fix.
+
+        **Security issue?** Stop here and follow [SECURITY.md](https://github.com/opx77-framework/.github/blob/main/SECURITY.md) instead: an exploit described in a public issue is an exploit handed to every server.
+        **A question rather than a defect?** Ask on [Discord](https://discord.gg/xpSuYgEYsU).
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - opx_infinity (framework)
+        - opx_lib (client library)
+        - opx77_doc (documentation site)
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: module
+    attributes:
+      label: Module
+      description: The `modules/<id>` folder or feature involved, if you know it.
+      placeholder: inventory, garages, doorlock, animations, ...
+  - type: input
+    id: version
+    attributes:
+      label: OPX version or commit
+      description: The `version` line in the resource's `open77.lua`, or the commit you deployed (`git rev-parse --short HEAD`). `/opx.version` prints it in game.
+      placeholder: "opx_infinity 0.1.2 @ 871cf5d, opx_lib 0.4.0"
+    validations:
+      required: true
+  - type: input
+    id: server-build
+    attributes:
+      label: Open77 server build
+      description: Printed at the top of the server journal.
+      placeholder: "2.31.13+op77.123"
+    validations:
+      required: true
+  - type: input
+    id: client-build
+    attributes:
+      label: Open77 client build
+      description: The game client's Open77 build. Several features look natives up at run time, so the client build matters as much as the server's.
+      placeholder: "2.31.13+op77.123"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you saw in game or in the journal. Describe the symptom from the player's side; that is what the next person will search for.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: From a fresh join if possible. Say how many players were involved and who did what.
+      placeholder: |
+        1. Join, load a character
+        2. Stand at the garage marker at ...
+        3. Press E
+        4. ...
+    validations:
+      required: true
+  - type: textarea
+    id: server-logs
+    attributes:
+      label: Server journal
+      description: The lines around the problem (`[module] ...`, `[boot] ...`, errors). Remove connection strings, IP addresses and anything private.
+      render: shell
+  - type: textarea
+    id: client-logs
+    attributes:
+      label: Client log
+      description: The player's client log, and the output of `/opx.client` in the client console if relevant.
+      render: shell
+  - type: textarea
+    id: context
+    attributes:
+      label: Server setup
+      description: Other resources running next to OPX (especially any that place players, draw a HUD or own doors and elevators), modules turned off in `config/`, database engine.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched the existing issues and the documentation.
+          required: true
+        - label: This is not a security vulnerability (those go through SECURITY.md).
+          required: true
