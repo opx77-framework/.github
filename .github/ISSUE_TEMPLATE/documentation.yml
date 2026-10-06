@@ -1,0 +1,23 @@
+name: Documentation issue
+description: A page on the documentation site is wrong, missing or unclear.
+title: "docs: <page>: <what is wrong>"
+labels: ["documentation"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: The URL on https://opx77-framework.github.io/opx77_doc/
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong or missing
+      description: Quote the sentence if it is wrong. The code is the source of truth; a link to the file that disagrees helps a lot.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested fix

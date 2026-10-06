@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://opx77-framework.github.io/opx77_doc/
+    about: Install, configure, every module, every export. Most questions are answered here.
+  - name: Discord (questions and help)
+    url: https://discord.gg/xpSuYgEYsU
+    about: Ask how to do something, share a server setup, talk with other operators and creators.
+  - name: Report a security vulnerability
+    url: https://github.com/opx77-framework/.github/blob/main/SECURITY.md
+    about: Never in a public issue. Use a private security advisory instead.
